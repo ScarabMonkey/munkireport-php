@@ -20,7 +20,7 @@ runtime='604800'
 switchresults="/usr/local/munki/preflight.d/cache/networkswitch.txt"
 
 if [ ! -f $switchresults ]; then
-	touch $switchresults
+	touch -t 04010101 $switchresults
 fi
 
 # Sample from http://stackoverflow.com/questions/1207052/how-to-use-shell-script-checking-last-changed-time-of-a-file
